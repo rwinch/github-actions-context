@@ -9,7 +9,7 @@ jobs:
     continue-on-error: false
     steps:
     - name: Tests
-      run: echo Building
+      run: echo2 Building
   notify:
     name: Notify
     needs: [build]
