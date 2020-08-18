@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: Build with Gradle
-        run: echo "Building"
+        run: echo Building
