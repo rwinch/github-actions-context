@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name:
-      run: echo "Building"
+      run: echo Building
     - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
