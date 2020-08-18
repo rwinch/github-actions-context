@@ -6,10 +6,14 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - name:
+    - name: Tests
       run: echo Building
+  notify:
+    name: Notify
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
