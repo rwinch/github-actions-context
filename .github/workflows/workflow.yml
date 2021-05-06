@@ -6,7 +6,7 @@ jobs:
   prerequisites:
     environment: shared
     env:
-      ENABLED: ${{ ENABLED }}
+      ENABLED: ${{ secrets.ENABLED }}
     runs-on: ubuntu-latest
     if: github.repository != 'rwinch/github-actions-context'
     steps:
