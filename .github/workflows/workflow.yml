@@ -8,7 +8,7 @@ jobs:
     env:
       ENABLED: ${{ secrets.ENABLED }}
     runs-on: ubuntu-latest
-    if: github.repository != 'rwinch/github-actions-context'
+    if: ${{ ENABLED == 'true'}}
     steps:
       - name: Enabled
         run: echo hi
