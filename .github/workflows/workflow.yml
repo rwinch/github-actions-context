@@ -5,7 +5,7 @@ on: push
 jobs:
   prerequisites:
     runs-on: ubuntu-latest
-    if: github.repository == 'rwinch/github-actions-context'
+    if: github.repository != 'rwinch/github-actions-context'
     steps:
       - name: Enabled
         run: echo Enabled
