@@ -6,6 +6,9 @@ jobs:
   prerequisites:
     runs-on: ubuntu-latest
     if: github.repository == 'rwinch/github-actions-context'
+    steps:
+      - name: Enabled
+        run: echo Enabled
   build:
     name: Build
     needs: [prerequisites]
