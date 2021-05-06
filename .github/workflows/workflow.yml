@@ -9,7 +9,7 @@ jobs:
     if: github.repository != 'rwinch/github-actions-context'
     steps:
       - name: Enabled
-        run: echo ${{shared.ENABLED}}
+        run: echo ${{ENABLED}}
   build:
     name: Build
     needs: [prerequisites]
