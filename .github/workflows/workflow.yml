@@ -1,7 +1,5 @@
 name: Build
 
-branch:
-
 on:
   push:
     branches:
