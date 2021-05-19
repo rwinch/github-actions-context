@@ -11,4 +11,4 @@ jobs:
     continue-on-error: false
     steps:
     - name: Tests
-      run: echo Building
+      run: echo main
