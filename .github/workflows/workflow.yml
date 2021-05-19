@@ -1,9 +1,6 @@
 name: Build
 
-on:
-  push:
-    branches:
-      - 1.0.x
+on: push
 jobs:
   build:
     name: Build
@@ -11,4 +8,4 @@ jobs:
     continue-on-error: false
     steps:
     - name: Tests
-      run: echo main
+      run: echo 1.0.x
