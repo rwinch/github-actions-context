@@ -1,7 +1,11 @@
 name: Build
 
-on: push
+branch:
 
+on:
+  push:
+    branches:
+      - main
 jobs:
   prerequisites:
     environment: shared
